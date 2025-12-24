@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f172a;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+@keyframes textGlow {
+  0%, 100% { text-shadow: 0 0 5px #3b82f6, 0 0 10px #facc15, 0 0 20px #ec4899; }
+  50% { text-shadow: 0 0 10px #3b82f6, 0 0 20px #facc15, 0 0 40px #ec4899; }
+}
+
+.animate-textGlow {
+  animation: textGlow 2s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.5s ease forwards;
+}
